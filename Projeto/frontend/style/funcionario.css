@@ -116,6 +116,7 @@
 nav .sidebar-button i{
   font-size: 35px;
   margin-right: 10px;
+  color: white;
 }
 .home-section nav .search-box{
   position: relative;
@@ -152,8 +153,8 @@ nav .search-box .bx-search{
 .home-section nav .profile-details{
   display: flex;
   align-items: center;
-  background: #ffffff;
-  border: 2px solid #EFEEF1;
+  background: #979797;
+  border: 2px solid #f1760a;
   border-radius: 6px;
   height: 50px;
   min-width: 190px;

@@ -79,8 +79,9 @@ body {
     color:  #f75a25;
 }
 
-.btn {
+#btn {
     background-color: #f75a25;
+    height: 40px;
     color: #fff;
     font-size: 14px;
     font-weight: 600;
@@ -91,8 +92,12 @@ body {
 
 }
 
-.btn:hover {
+#btn:hover {
     transform: scale(1.05);
     background-color: #f75a25;
 
+}
+
+#erro-massagem{
+    color: red;
 }

@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 require('dotenv').config()
+const bcrypt = require('bcrypt')
 
 const { PrismaClient } = require('@prisma/client')
 
@@ -7,37 +8,38 @@ const prisma = new PrismaClient()
 
 
 const create = async (req, res) => {
+    var info = req.body
+
+    info.senha = await bcrypt.hash(req.body.senha, 10)
+
     let user = await prisma.usuario.create({
-        data: req.body
+        data: info
     })
-    res.status(201).end()
+    res.status(201).json(user).end()
 }
 
 
 const login = async (req, res) => {
     const user = await prisma.usuario.findFirst({
-        where: {
-            AND: [
-                { email: req.body.email },
-                { senha: req.body.senha }
-            ]
-        }
 
+        where:{ email: req.body.email }
     })
 
-    if (user) {
-        var result = user
-        jwt.sign(result, process.env.KEY, { expiresIn: '10h' }, function (err, token) {
+    if (user) { console.log(user)
+        if (await bcrypt.compare(req.body.senha, user.senha)) {
+            var result = user
+            jwt.sign(result, process.env.KEY, { expiresIn: '12h' }, function (err, token) {
+    
+                if (err == null) {
+               
+                    result["token"] = token
+                    res.status(200).json({ result }).end()
+                } else {
+                    res.status(404).json(err).end()
+                }
+            })
+        }
 
-            console.log(err)
-            if (err == null) {
-                console.log(result)
-                result["token"] = token
-                res.status(200).json({ result }).end()
-            } else {
-                res.status(404).json(err).end()
-            }
-        })
     }else{
         res.status(404).json({"menssagem":"error"}).end()
     }

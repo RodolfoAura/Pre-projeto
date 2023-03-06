@@ -1,71 +1,74 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../style/funcionario.css">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../style/funcionario.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
 <body>
+
   <div class="barra-lateral">
     <div class="logo-detalhes">
       <i class='bx bx-brightness'></i>
       <span class="logo_name">AgroTech</span>
     </div>
-      <ul class="nav-links">
-        <li>
-          <a href="#" >
-            <i class='bx bx-grid-alt' ></i>
-            <span class="links_name">Home</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="active">
-            <i class='bx bx-list-ul' ></i>
-            <span class="links_name">Frota</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-pie-chart-alt-2' ></i>
-            <span class="links_name">Dados</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-user' ></i>
-            <span class="links_name">Motoristas</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-wrench' ></i>
-            <span class="links_name">Manutenção</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-cog' ></i>
-            <span class="links_name">Configurações</span>
-          </a>
-        </li>
-        <li class="log_out">
-          <a href="../pages/Login.html">
-            <i class='bx bx-log-out'></i>
-            <span class="links_name">Sair</span>
-          </a>
-        </li>
-      </ul>
+    <ul class="nav-links">
+      <li>
+        <a href="#home" id="h" class="link active">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="#frota" id="f" class="link">
+          <i class='bx bx-list-ul'></i>
+          <span class="links_name">Frota</span>
+        </a>
+      </li>
+      <li>
+        <a href="#dados" id="d" class="link">
+          <i class='bx bx-pie-chart-alt-2'></i>
+          <span class="links_name">Dados</span>
+        </a>
+      </li>
+      <li>
+        <a href="#motorista" id="mo" class="link">
+          <i class='bx bx-user'></i>
+          <span class="links_name">Motoristas</span>
+        </a>
+      </li>
+      <li>
+        <a href="#manutencao" id="ma" class="link">
+          <i class='bx bx-wrench'></i>
+          <span class="links_name">Manutenção</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog'></i>
+          <span class="links_name">Configurações</span>
+        </a>
+      </li>
+      <li class="log_out">
+        <a href="../pages/Login.html">
+          <i class='bx bx-log-out'></i>
+          <span class="links_name">Sair</span>
+        </a>
+      </li>
+    </ul>
   </div>
   <section class="home-section">
     <nav>
       <div class="barra-lateral-button">
         <i class='bx bx-menu barra-lateralBtn'></i>
-        
+
       </div>
       <div class="search-box">
         <input type="text" placeholder="Pesquisa...">
-        <i class='bx bx-search' ></i>
+        <i class='bx bx-search'></i>
       </div>
       <div class="profile-detalhes">
         <img src="https://i.imgflip.com/76jos2.jpg" alt="">
@@ -73,7 +76,7 @@
       </div>
     </nav>
 
-    <div class="Tela " id="home">
+    <div class="Tela" id="home">
       <div class="overview-boxes">
         <div class="box">
           <div class="direita">
@@ -87,21 +90,21 @@
             <div class="box-dados">Motoristas</div>
             <div class="number">50</div>
           </div>
-          <i class='bx bx-user cart two' ></i>
+          <i class='bx bx-user cart two'></i>
         </div>
         <div class="box">
           <div class="direita">
             <div class="box-dados">Entregas realizadas</div>
             <div class="number">4</div>
           </div>
-          <i class='bx bx-cart cart three' ></i>
+          <i class='bx bx-cart cart three'></i>
         </div>
         <div class="box">
           <div class="direita">
             <div class="box-dados">Em manutenção</div>
             <div class="number">11</div>
           </div>
-          <i class='bx  bx-bus cart four' ></i>
+          <i class='bx  bx-bus cart four'></i>
         </div>
       </div>
 
@@ -109,43 +112,43 @@
         <div class="recent-Content box">
           <div class="titulo">Entregas</div>
           <div class="Content-detalhes">
-         
+
             <ul class="detalhes">
-            <li class="dados">Motoristas</li>
-            <li><a href="#">Santiago</a></li>
-            <li><a href="#">Rodolfo</a></li>
-            <li><a href="#">João</a></li>
-            <li><a href="#">Guilherme</a></li>
-            <li><a href="#">Carlos</a></li>
-            <li><a href="#">Vinicius</a></li>
-            <li><a href="#">Gabriel</a></li>
-            <li><a href="#">Sergio</a></li>
-             <li><a href="#">Pedro</a></li>
-          </ul>
-          <ul class="detalhes">
-            <li class="dados">Veiculos</li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
-            <li><a href="#">7</a></li>
-             <li><a href="#">8</a></li>
-            <li><a href="#">9</a></li>
-          </ul>
-          <ul class="detalhes">
-            <li class="dados">Situação</li>
-            <li><a href="#">Entregue</a></li>
-            <li><a href="#">Pendente</a></li>
-            <li><a href="#">Cancelada</a></li>
-            <li><a href="#">Entregue</a></li>
-            <li><a href="#">Pendente</a></li>
-            <li><a href="#">Cancelada</a></li>
-            <li><a href="#">Entregue</a></li>
-             <li><a href="#">Pendente</a></li>
-            <li><a href="#">Entregue</a></li>
-          </ul>
+              <li class="dados">Motoristas</li>
+              <li><a href="#">Santiago</a></li>
+              <li><a href="#">Rodolfo</a></li>
+              <li><a href="#">João</a></li>
+              <li><a href="#">Guilherme</a></li>
+              <li><a href="#">Carlos</a></li>
+              <li><a href="#">Vinicius</a></li>
+              <li><a href="#">Gabriel</a></li>
+              <li><a href="#">Sergio</a></li>
+              <li><a href="#">Pedro</a></li>
+            </ul>
+            <ul class="detalhes">
+              <li class="dados">Veiculos</li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">9</a></li>
+            </ul>
+            <ul class="detalhes">
+              <li class="dados">Situação</li>
+              <li><a href="#">Entregue</a></li>
+              <li><a href="#">Pendente</a></li>
+              <li><a href="#">Cancelada</a></li>
+              <li><a href="#">Entregue</a></li>
+              <li><a href="#">Pendente</a></li>
+              <li><a href="#">Cancelada</a></li>
+              <li><a href="#">Entregue</a></li>
+              <li><a href="#">Pendente</a></li>
+              <li><a href="#">Entregue</a></li>
+            </ul>
           </div>
           <div class="button">
             <a href="#">Ver tudo</a>
@@ -155,71 +158,71 @@
           <div class="titulo">Veiculos</div>
           <ul class="top-Content-detalhes">
             <li>
-            <a href="#">
-              <span class="titulo">Estado</span>
-            </a>
-            <span class="titulo">ID</span>
-          </li>
-          <li>
-            <a href="#">
-              
-              <span class="estado">Em manutenção </span>
-            </a>
-            <span class="valor">10</span>
-          </li>
-          <li>
-            <a href="#">
-              <span class="estado">Em manutenção</span>
-            </a>
-            <span class="valor">12</span>
-          </li>
-          <li>
-            <a href="#">
-              <span class="estado">Em manutenção.</span>
-            </a>
-            <span class="valor">29</span>
-          </li>
-          <li>
-            <a href="#">
-              <span class="estado">Em manutenção</span>
-            </a>
-            <span class="valor">40</span>
-          </li>
-          <li>
-            <a href="#">
-              <span class="estado">Em manutenção</span>
-            </a>
-            <span class="valor">37</span>
-          <li>
-            <a href="#">
-              <span class="estado">Em manutenção</span>
-            </a>
-            <span class="valor">15</span>
-          </li>
-          <li>
-            <a href="#">
-              <span class="estado">Em manutenção</span>
-            </a>
-            <span class="valor">25</span>
-          </li>
-          <li>
-            <a href="#">
-              <span class="estado">Em manutenção</span>
-            </a>
-            <span class="valor">24</span>
-          </li>
-<li>
-            <a href="#">
-              <span class="estado">Em manutenção</span>
-            </a>
-            <span class="valor">14</span>
-          </li>
+              <a href="#">
+                <span class="titulo">Estado</span>
+              </a>
+              <span class="titulo">ID</span>
+            </li>
+            <li>
+              <a href="#">
+
+                <span class="estado">Em manutenção </span>
+              </a>
+              <span class="valor">10</span>
+            </li>
+            <li>
+              <a href="#">
+                <span class="estado">Em manutenção</span>
+              </a>
+              <span class="valor">12</span>
+            </li>
+            <li>
+              <a href="#">
+                <span class="estado">Em manutenção.</span>
+              </a>
+              <span class="valor">29</span>
+            </li>
+            <li>
+              <a href="#">
+                <span class="estado">Em manutenção</span>
+              </a>
+              <span class="valor">40</span>
+            </li>
+            <li>
+              <a href="#">
+                <span class="estado">Em manutenção</span>
+              </a>
+              <span class="valor">37</span>
+            <li>
+              <a href="#">
+                <span class="estado">Em manutenção</span>
+              </a>
+              <span class="valor">15</span>
+            </li>
+            <li>
+              <a href="#">
+                <span class="estado">Em manutenção</span>
+              </a>
+              <span class="valor">25</span>
+            </li>
+            <li>
+              <a href="#">
+                <span class="estado">Em manutenção</span>
+              </a>
+              <span class="valor">24</span>
+            </li>
+            <li>
+              <a href="#">
+                <span class="estado">Em manutenção</span>
+              </a>
+              <span class="valor">14</span>
+            </li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="Tela model " id="frota">
+    <div class="Tela model" id="frota">
       <div class="Content-boxes">
         <div class="recent-Content2 box">
           <div class="titulo">Frota</div>
@@ -237,42 +240,276 @@
               <li><a href="#">07 Fev 2023</a></li>
             </ul>
             <ul class="detalhes">
-            <li class="dados">Motoristas</li>
-            <li><a href="#">Santiago</a></li>
-            <li><a href="#">Rodolfo</a></li>
-            <li><a href="#">João</a></li>
-            <li><a href="#">Guilherme</a></li>
-            <li><a href="#">Carlos</a></li>
-            <li><a href="#">Vinicius</a></li>
-            <li><a href="#">Gabriel</a></li>
-            <li><a href="#">Sergio</a></li>
-             <li><a href="#">Pedro</a></li>
-          </ul>
-          <ul class="detalhes">
-            <li class="dados">Veiculos</li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
-            <li><a href="#">7</a></li>
-             <li><a href="#">8</a></li>
-            <li><a href="#">9</a></li>
-          </ul>
-          <ul class="detalhes">
-            <li class="dados">Situação</li>
-            <li><a href="#">Entregue</a></li>
-            <li><a href="#">Pendente</a></li>
-            <li><a href="#">Cancelada</a></li>
-            <li><a href="#">Entregue</a></li>
-            <li><a href="#">Pendente</a></li>
-            <li><a href="#">Cancelada</a></li>
-            <li><a href="#">Entregue</a></li>
-             <li><a href="#">Pendente</a></li>
-            <li><a href="#">Entregue</a></li>
-          </ul>
-          <!-- <ul class="detalhes">
+              <li class="dados">Motoristas</li>
+              <li><a href="#">Santiago</a></li>
+              <li><a href="#">Rodolfo</a></li>
+              <li><a href="#">João</a></li>
+              <li><a href="#">Guilherme</a></li>
+              <li><a href="#">Carlos</a></li>
+              <li><a href="#">Vinicius</a></li>
+              <li><a href="#">Gabriel</a></li>
+              <li><a href="#">Sergio</a></li>
+              <li><a href="#">Pedro</a></li>
+            </ul>
+            <ul class="detalhes">
+              <li class="dados">Veiculos</li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">9</a></li>
+            </ul>
+            <ul class="detalhes">
+              <li class="dados">Situação</li>
+              <li><a href="#">Entregue</a></li>
+              <li><a href="#">Pendente</a></li>
+              <li><a href="#">Cancelada</a></li>
+              <li><a href="#">Entregue</a></li>
+              <li><a href="#">Pendente</a></li>
+              <li><a href="#">Cancelada</a></li>
+              <li><a href="#">Entregue</a></li>
+              <li><a href="#">Pendente</a></li>
+              <li><a href="#">Entregue</a></li>
+            </ul>
+            <!-- <ul class="detalhes">
+            <li class="dados">Total</li>
+            <li><a href="#">$204.98</a></li>
+            <li><a href="#">$24.55</a></li>
+            <li><a href="#">$25.88</a></li>
+            <li><a href="#">$170.66</a></li>
+            <li><a href="#">$56.56</a></li>
+            <li><a href="#">$44.95</a></li>
+            <li><a href="#">$67.33</a></li>
+             <li><a href="#">$23.53</a></li>
+             <li><a href="#">$46.52</a></li>
+            <li><a href="#">$44.95</a></li>
+            <li><a href="#">$67.33</a></li>
+             <li><a href="#">$23.53</a></li>
+             <li><a href="#">$46.52</a></li>
+            <li><a href="#">$44.95</a></li>
+            <li><a href="#">$67.33</a></li>
+             <li><a href="#">$23.53</a></li>
+             <li><a href="#">$46.52</a></li>
+          </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Tela model" id="dados">
+      <div class="Content-boxes">
+        <div class="recent-Content2 box">
+          <div class="titulo">Dados</div>
+          <div class="Content-detalhes">
+            <ul class="detalhes">
+              <li class="dados">Data</li>
+              <li><a href="#">02 Jan 2023</a></li>
+              <li><a href="#">03 Jan 2023</a></li>
+              <li><a href="#">05 Jan 2023</a></li>
+              <li><a href="#">08 Jan 2023</a></li>
+              <li><a href="#">12 Jan 2023</a></li>
+              <li><a href="#">17 Jan 2023</a></li>
+              <li><a href="#">05 Fev 2023</a></li>
+              <li><a href="#">06 Fev 2023</a></li>
+              <li><a href="#">07 Fev 2023</a></li>
+            </ul>
+            <ul class="detalhes">
+              <li class="dados">Motoristas</li>
+              <li><a href="#">Santiago</a></li>
+              <li><a href="#">Rodolfo</a></li>
+              <li><a href="#">João</a></li>
+              <li><a href="#">Guilherme</a></li>
+              <li><a href="#">Carlos</a></li>
+              <li><a href="#">Vinicius</a></li>
+              <li><a href="#">Gabriel</a></li>
+              <li><a href="#">Sergio</a></li>
+              <li><a href="#">Pedro</a></li>
+            </ul>
+            <ul class="detalhes">
+              <li class="dados">Veiculos</li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">9</a></li>
+            </ul>
+            <ul class="detalhes">
+              <li class="dados">Situação</li>
+              <li><a href="#">Entregue</a></li>
+              <li><a href="#">Pendente</a></li>
+              <li><a href="#">Cancelada</a></li>
+              <li><a href="#">Entregue</a></li>
+              <li><a href="#">Pendente</a></li>
+              <li><a href="#">Cancelada</a></li>
+              <li><a href="#">Entregue</a></li>
+              <li><a href="#">Pendente</a></li>
+              <li><a href="#">Entregue</a></li>
+            </ul>
+            <!-- <ul class="detalhes">
+            <li class="dados">Total</li>
+            <li><a href="#">$204.98</a></li>
+            <li><a href="#">$24.55</a></li>
+            <li><a href="#">$25.88</a></li>
+            <li><a href="#">$170.66</a></li>
+            <li><a href="#">$56.56</a></li>
+            <li><a href="#">$44.95</a></li>
+            <li><a href="#">$67.33</a></li>
+             <li><a href="#">$23.53</a></li>
+             <li><a href="#">$46.52</a></li>
+            <li><a href="#">$44.95</a></li>
+            <li><a href="#">$67.33</a></li>
+             <li><a href="#">$23.53</a></li>
+             <li><a href="#">$46.52</a></li>
+            <li><a href="#">$44.95</a></li>
+            <li><a href="#">$67.33</a></li>
+             <li><a href="#">$23.53</a></li>
+             <li><a href="#">$46.52</a></li>
+          </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Tela model" id="motorista">
+      <div class="Content-boxes">
+        <div class="recent-Content2 box">
+          <div class="titulo">Motorista</div>
+          <div class="Content-detalhes">
+            <ul class="detalhes">
+              <li class="dados">Data</li>
+              <li><a href="#">02 Jan 2023</a></li>
+              <li><a href="#">03 Jan 2023</a></li>
+              <li><a href="#">05 Jan 2023</a></li>
+              <li><a href="#">08 Jan 2023</a></li>
+              <li><a href="#">12 Jan 2023</a></li>
+              <li><a href="#">17 Jan 2023</a></li>
+              <li><a href="#">05 Fev 2023</a></li>
+              <li><a href="#">06 Fev 2023</a></li>
+              <li><a href="#">07 Fev 2023</a></li>
+            </ul>
+            <ul class="detalhes">
+              <li class="dados">Motoristas</li>
+              <li><a href="#">Santiago</a></li>
+              <li><a href="#">Rodolfo</a></li>
+              <li><a href="#">João</a></li>
+              <li><a href="#">Guilherme</a></li>
+              <li><a href="#">Carlos</a></li>
+              <li><a href="#">Vinicius</a></li>
+              <li><a href="#">Gabriel</a></li>
+              <li><a href="#">Sergio</a></li>
+              <li><a href="#">Pedro</a></li>
+            </ul>
+            <ul class="detalhes">
+              <li class="dados">Veiculos</li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">9</a></li>
+            </ul>
+            <ul class="detalhes">
+              <li class="dados">Situação</li>
+              <li><a href="#">Entregue</a></li>
+              <li><a href="#">Pendente</a></li>
+              <li><a href="#">Cancelada</a></li>
+              <li><a href="#">Entregue</a></li>
+              <li><a href="#">Pendente</a></li>
+              <li><a href="#">Cancelada</a></li>
+              <li><a href="#">Entregue</a></li>
+              <li><a href="#">Pendente</a></li>
+              <li><a href="#">Entregue</a></li>
+            </ul>
+            <!-- <ul class="detalhes">
+            <li class="dados">Total</li>
+            <li><a href="#">$204.98</a></li>
+            <li><a href="#">$24.55</a></li>
+            <li><a href="#">$25.88</a></li>
+            <li><a href="#">$170.66</a></li>
+            <li><a href="#">$56.56</a></li>
+            <li><a href="#">$44.95</a></li>
+            <li><a href="#">$67.33</a></li>
+             <li><a href="#">$23.53</a></li>
+             <li><a href="#">$46.52</a></li>
+            <li><a href="#">$44.95</a></li>
+            <li><a href="#">$67.33</a></li>
+             <li><a href="#">$23.53</a></li>
+             <li><a href="#">$46.52</a></li>
+            <li><a href="#">$44.95</a></li>
+            <li><a href="#">$67.33</a></li>
+             <li><a href="#">$23.53</a></li>
+             <li><a href="#">$46.52</a></li>
+          </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Tela model" id="manutencao">
+      <div class="Content-boxes">
+        <div class="recent-Content2 box">
+          <div class="titulo">Manutencao</div>
+          <div class="Content-detalhes">
+            <ul class="detalhes">
+              <li class="dados">Data</li>
+              <li><a href="#">02 Jan 2023</a></li>
+              <li><a href="#">03 Jan 2023</a></li>
+              <li><a href="#">05 Jan 2023</a></li>
+              <li><a href="#">08 Jan 2023</a></li>
+              <li><a href="#">12 Jan 2023</a></li>
+              <li><a href="#">17 Jan 2023</a></li>
+              <li><a href="#">05 Fev 2023</a></li>
+              <li><a href="#">06 Fev 2023</a></li>
+              <li><a href="#">07 Fev 2023</a></li>
+            </ul>
+            <ul class="detalhes">
+              <li class="dados">Motoristas</li>
+              <li><a href="#">Santiago</a></li>
+              <li><a href="#">Rodolfo</a></li>
+              <li><a href="#">João</a></li>
+              <li><a href="#">Guilherme</a></li>
+              <li><a href="#">Carlos</a></li>
+              <li><a href="#">Vinicius</a></li>
+              <li><a href="#">Gabriel</a></li>
+              <li><a href="#">Sergio</a></li>
+              <li><a href="#">Pedro</a></li>
+            </ul>
+            <ul class="detalhes">
+              <li class="dados">Veiculos</li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">9</a></li>
+            </ul>
+            <ul class="detalhes">
+              <li class="dados">Situação</li>
+              <li><a href="#">Entregue</a></li>
+              <li><a href="#">Pendente</a></li>
+              <li><a href="#">Cancelada</a></li>
+              <li><a href="#">Entregue</a></li>
+              <li><a href="#">Pendente</a></li>
+              <li><a href="#">Cancelada</a></li>
+              <li><a href="#">Entregue</a></li>
+              <li><a href="#">Pendente</a></li>
+              <li><a href="#">Entregue</a></li>
+            </ul>
+            <!-- <ul class="detalhes">
             <li class="dados">Total</li>
             <li><a href="#">$204.98</a></li>
             <li><a href="#">$24.55</a></li>
@@ -301,5 +538,5 @@
   <script src="../js/inicio.js"></script>
 
 </body>
-</html>
 
+</html>

@@ -1,51 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
-.model{
+.model {
   display: none !important;
   visibility: hidden;
 }
-.barra-lateral{
+
+.barra-lateral {
   position: fixed;
   height: 100%;
   width: 240px;
   background: #d45e15;
   transition: all 0.5s ease;
 }
-.barra-lateral.active{
+
+.barra-lateral.active {
   width: 60px;
 }
-.barra-lateral .logo-detalhes{
+
+.barra-lateral .logo-detalhes {
   height: 80px;
   display: flex;
   align-items: center;
 }
-.barra-lateral .logo-detalhes i{
+
+.barra-lateral .logo-detalhes i {
   font-size: 28px;
   font-weight: 500;
   color: #fff;
   min-width: 60px;
   text-align: center
 }
-.barra-lateral .logo-detalhes .logo_name{
+
+.barra-lateral .logo-detalhes .logo_name {
   color: #fff;
   font-size: 24px;
   font-weight: 500;
 }
-.barra-lateral .nav-links{
+
+.barra-lateral .nav-links {
   margin-top: 10px;
 }
-.barra-lateral .nav-links li{
+
+.barra-lateral .nav-links li {
   position: relative;
   list-style: none;
   height: 50px;
 }
-.barra-lateral .nav-links li a{
+
+.barra-lateral .nav-links li a {
   height: 100%;
   width: 100%;
   display: flex;
@@ -53,30 +62,36 @@
   text-decoration: none;
   transition: all 0.4s ease;
 }
-.barra-lateral .nav-links li a.active{
+
+.barra-lateral .nav-links li a.active {
   background: #ff6a00;
 }
-.barra-lateral .nav-links li a:hover{
+
+.barra-lateral .nav-links li a:hover {
   background: #d78b51;
 }
-.barra-lateral .nav-links li i{
+
+.barra-lateral .nav-links li i {
   min-width: 60px;
   text-align: center;
   font-size: 18px;
   color: #fff;
 }
-.barra-lateral .nav-links li a .links_name{
+
+.barra-lateral .nav-links li a .links_name {
   color: #fff;
   font-size: 15px;
   font-weight: 400;
   white-space: nowrap;
 }
-.barra-lateral .nav-links .log_out{
+
+.barra-lateral .nav-links .log_out {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
-.home-section{
+
+.home-section {
   position: relative;
   background: #5e5e5e;
   min-height: 100vh;
@@ -84,11 +99,13 @@
   left: 240px;
   transition: all 0.5s ease;
 }
-.barra-lateral.active ~ .home-section{
+
+.barra-lateral.active~.home-section {
   width: calc(100% - 60px);
   left: 60px;
 }
-.home-section nav{
+
+.home-section nav {
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -103,29 +120,34 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease;
 }
-.barra-lateral.active ~ .home-section nav{
+
+.barra-lateral.active~.home-section nav {
   left: 60px;
   width: calc(100% - 60px);
 }
-.home-section nav .barra-lateral-button{
+
+.home-section nav .barra-lateral-button {
   display: flex;
   align-items: center;
   font-size: 24px;
   font-weight: 500;
 }
-nav .barra-lateral-button i{
+
+nav .barra-lateral-button i {
   font-size: 35px;
   margin-right: 10px;
   color: white;
 }
-.home-section nav .search-box{
+
+.home-section nav .search-box {
   position: relative;
   height: 50px;
   max-width: 550px;
   width: 100%;
   margin: 0 20px;
 }
-nav .search-box input{
+
+nav .search-box input {
   height: 100%;
   width: 100%;
   outline: none;
@@ -135,7 +157,8 @@ nav .search-box input{
   font-size: 18px;
   padding: 0 15px;
 }
-nav .search-box .bx-search{
+
+nav .search-box .bx-search {
   position: absolute;
   height: 40px;
   width: 40px;
@@ -150,7 +173,8 @@ nav .search-box .bx-search{
   font-size: 22px;
   transition: all 0.4 ease;
 }
-.home-section nav .profile-detalhes{
+
+.home-section nav .profile-detalhes {
   display: flex;
   align-items: center;
   background: #979797;
@@ -160,30 +184,35 @@ nav .search-box .bx-search{
   min-width: 190px;
   padding: 0 15px 0 2px;
 }
-nav .profile-detalhes img{
+
+nav .profile-detalhes img {
   height: 40px;
   width: 40px;
   border-radius: 6px;
   object-fit: cover;
 }
-nav .profile-detalhes .admin_name{
+
+nav .profile-detalhes .admin_name {
   font-size: 15px;
   font-weight: 500;
   color: #333;
   margin: 0 10px;
   white-space: nowrap;
 }
-nav .profile-detalhes i{
+
+nav .profile-detalhes i {
   font-size: 25px;
   color: #333;
 }
-.home-section .Tela{
+
+.home-section .Tela {
   position: relative;
   padding-top: 104px;
- 
+
 
 }
-.Tela .overview-boxes{
+
+.Tela .overview-boxes {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -191,33 +220,38 @@ nav .profile-detalhes i{
   padding: 0 20px;
   margin-bottom: 26px;
 }
-.overview-boxes .box{
+
+.overview-boxes .box {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: calc(100% / 4 - 15px);
   height: 12.5vh;
   background: #818080;
-  color:#fff;
+  color: #fff;
   padding: 15px 14px;
   border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.overview-boxes .box-dados{
+
+.overview-boxes .box-dados {
   font-size: 20px;
   font-weight: 500;
 }
-.Tela .box .number{
+
+.Tela .box .number {
   display: inline-block;
   font-size: 35px;
   margin-top: -6px;
   font-weight: 500;
 }
-.Tela .box .indicator{
+
+.Tela .box .indicator {
   display: flex;
   align-items: center;
 }
-.Tela .box .indicator i{
+
+.Tela .box .indicator i {
   height: 20px;
   width: 20px;
   background: #8FDACB;
@@ -228,13 +262,16 @@ nav .profile-detalhes i{
   font-size: 20px;
   margin-right: 5px;
 }
-.box .indicator i.down{
+
+.box .indicator i.down {
   background: #e87d88;
 }
-.Tela .box .indicator .text{
+
+.Tela .box .indicator .text {
   font-size: 12px;
 }
-.Tela .box .cart{
+
+.Tela .box .cart {
   display: inline-block;
   font-size: 32px;
   height: 50px;
@@ -249,23 +286,27 @@ nav .profile-detalhes i{
 
 
 
-.Tela .box .cart.two{
-   color: #2BD47D;
-   background: #C0F2D8;
- }
-.Tela .box .cart.three{
-   color: #ffc233;
-   background: #ffe8b3;
- }
-.Tela .box .cart.four{
-   color: #e05260;
-   background: #f7d4d7;
- }
-.Tela .total-order{
+.Tela .box .cart.two {
+  color: #2BD47D;
+  background: #C0F2D8;
+}
+
+.Tela .box .cart.three {
+  color: #ffc233;
+  background: #ffe8b3;
+}
+
+.Tela .box .cart.four {
+  color: #e05260;
+  background: #f7d4d7;
+}
+
+.Tela .total-order {
   font-size: 20px;
   font-weight: 500;
 }
-.Tela .Content-boxes{
+
+.Tela .Content-boxes {
   display: flex;
   justify-content: space-between;
   color: #fff;
@@ -273,49 +314,57 @@ nav .profile-detalhes i{
 }
 
 /* left box */
-.Tela .Content-boxes .recent-Content{
+.Tela .Content-boxes .recent-Content {
   width: 65%;
   background: #fff;
   padding: 20px 30px;
   margin: 0 20px;
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  background-color:#818080;
+  background-color: #818080;
 
 }
-.Tela .Content-boxes .Content-detalhes{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color:#818080;
+
+.Tela .Content-boxes .Content-detalhes {
+  background-color: #818080;
   color: #fff;
 }
-.Content-boxes .box .titulo{
+
+td{
+  padding: 50p                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         x;
+}
+
+
+.Content-boxes .box .titulo {
   font-size: 24px;
   font-weight: 500;
   color: #fff;
-  /* margin-bottom: 10px; */
 }
-.Content-boxes .Content-detalhes li.dados{
+
+.Content-boxes .Content-detalhes li.dados {
   font-size: 20px;
   font-weight: 500;
 }
-.Content-boxes .Content-detalhes li{
+
+.Content-boxes .Content-detalhes li {
   list-style: none;
   margin: 8px 0;
 }
-.Content-boxes .Content-detalhes li a{
+
+.Content-boxes .Content-detalhes li a {
   font-size: 18px;
   color: #fff;
   font-size: 400;
   text-decoration: none;
 }
-.Content-boxes .box .button{
+
+.Content-boxes .box .button {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
-.Content-boxes .box .button a{
+
+.Content-boxes .box .button a {
   color: #fff;
   background: #ff6a00;
   padding: 4px 12px;
@@ -325,13 +374,14 @@ nav .profile-detalhes i{
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.Content-boxes .box .button a:hover{
-  background:  #ffffff;
+
+.Content-boxes .box .button a:hover {
+  background: #ffffff;
   color: #ff6a00;
 }
 
 /* Right box */
-.Tela .Content-boxes .top-Content{
+.Tela .Content-boxes .top-Content {
   width: 35%;
   background: #818080;
   padding: 20px 30px;
@@ -339,13 +389,15 @@ nav .profile-detalhes i{
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.Content-boxes .top-Content li{
+
+.Content-boxes .top-Content li {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 10px 0;
 }
-.Content-boxes .top-Content li a img{
+
+.Content-boxes .top-Content li a img {
   height: 40px;
   width: 40px;
   object-fit: cover;
@@ -353,117 +405,141 @@ nav .profile-detalhes i{
   margin-right: 10px;
   background: #333;
 }
-.Content-boxes .top-Content li a{
+
+.Content-boxes .top-Content li a {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
+
 .Content-boxes .top-Content li .estado,
-.valor{
+.valor {
   font-size: 17px;
   font-weight: 400;
   color: #fff;
 }
+
 /* Responsive Media Query */
 @media (max-width: 1240px) {
-  .barra-lateral{
+  .barra-lateral {
     width: 60px;
   }
-  .barra-lateral.active{
+
+  .barra-lateral.active {
     width: 220px;
   }
-  .home-section{
+
+  .home-section {
     width: calc(100% - 60px);
     left: 60px;
   }
-  .barra-lateral.active ~ .home-section{
+
+  .barra-lateral.active~.home-section {
     /* width: calc(100% - 220px); */
     overflow: hidden;
     left: 220px;
   }
-  .home-section nav{
+
+  .home-section nav {
     width: calc(100% - 60px);
     left: 60px;
   }
-  .barra-lateral.active ~ .home-section nav{
+
+  .barra-lateral.active~.home-section nav {
     width: calc(100% - 220px);
     left: 220px;
   }
 }
+
 @media (max-width: 1150px) {
-  .Tela .Content-boxes{
+  .Tela .Content-boxes {
     flex-direction: column;
   }
-  .Tela .Content-boxes .box{
+
+  .Tela .Content-boxes .box {
     width: 100%;
     overflow-x: scroll;
     margin-bottom: 30px;
   }
-  .Tela .Content-boxes .top-Content{
+
+  .Tela .Content-boxes .top-Content {
     margin: 0;
   }
 }
+
 @media (max-width: 1000px) {
-  .overview-boxes .box{
+  .overview-boxes .box {
     width: calc(100% / 2 - 15px);
     margin-bottom: 15px;
   }
 }
+
 @media (max-width: 700px) {
+
   nav .barra-lateral-button .dashboard,
   nav .profile-detalhes .admin_name,
-  nav .profile-detalhes i{
+  nav .profile-detalhes i {
     display: none;
   }
-  .home-section nav .profile-detalhes{
+
+  .home-section nav .profile-detalhes {
     height: 50px;
     min-width: 40px;
   }
-  .Tela .Content-boxes .Content-detalhes{
+
+  .Tela .Content-boxes .Content-detalhes {
     width: 560px;
   }
 }
+
 @media (max-width: 550px) {
-  .overview-boxes .box{
+  .overview-boxes .box {
     width: 100%;
     margin-bottom: 15px;
   }
-  .barra-lateral.active ~ .home-section nav .profile-detalhes{
+
+  .barra-lateral.active~.home-section nav .profile-detalhes {
     display: none;
   }
 }
-  @media (max-width: 400px) {
-  .barra-lateral{
+
+@media (max-width: 400px) {
+  .barra-lateral {
     width: 0;
   }
-  .barra-lateral.active{
+
+  .barra-lateral.active {
     width: 60px;
   }
-  .home-section{
+
+  .home-section {
     width: 100%;
     left: 0;
   }
-  .barra-lateral.active ~ .home-section{
+
+  .barra-lateral.active~.home-section {
     left: 60px;
     width: calc(100% - 60px);
   }
-  .home-section nav{
+
+  .home-section nav {
     width: 100%;
     left: 0;
   }
-  .barra-lateral.active ~ .home-section nav{
+
+  .barra-lateral.active~.home-section nav {
     left: 60px;
     width: calc(100% - 60px);
   }
 }
 
-.Tela .Content-boxes .recent-Content2{
+.Tela .Content-boxes .recent-Content2 {
   width: 100%;
   background: #fff;
   padding: 20px 30px;
   margin: 0 20px;
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  background-color:#818080;
+  background-color: #818080;
 
 }

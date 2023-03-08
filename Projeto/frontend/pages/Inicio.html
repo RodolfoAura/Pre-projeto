@@ -81,28 +81,28 @@
         <div class="box">
           <div class="direita">
             <div class="box-dados">Frota</div>
-            <div class="number">40</div>
+            <div class="number veiculos">40</div>
           </div>
           <i class='bx bx-bus cart'></i>
         </div>
         <div class="box">
           <div class="direita">
             <div class="box-dados">Motoristas</div>
-            <div class="number">50</div>
+            <div class="number motoristas">50</div>
           </div>
           <i class='bx bx-user cart two'></i>
         </div>
         <div class="box">
           <div class="direita">
-            <div class="box-dados">Entregas realizadas</div>
-            <div class="number">4</div>
+            <div class="box-dados">Frota Disponível</div>
+            <div class="number frota-disponivel">4</div>
           </div>
           <i class='bx bx-cart cart three'></i>
         </div>
         <div class="box">
           <div class="direita">
             <div class="box-dados">Em manutenção</div>
-            <div class="number">11</div>
+            <div class="number frotaManutencao"></div>
           </div>
           <i class='bx  bx-bus cart four'></i>
         </div>
@@ -110,49 +110,23 @@
 
       <div class="Content-boxes">
         <div class="recent-Content box">
-          <div class="titulo">Entregas</div>
-          <div class="Content-detalhes">
-
-            <ul class="detalhes">
-              <li class="dados">Motoristas</li>
-              <li><a href="#">Santiago</a></li>
-              <li><a href="#">Rodolfo</a></li>
-              <li><a href="#">João</a></li>
-              <li><a href="#">Guilherme</a></li>
-              <li><a href="#">Carlos</a></li>
-              <li><a href="#">Vinicius</a></li>
-              <li><a href="#">Gabriel</a></li>
-              <li><a href="#">Sergio</a></li>
-              <li><a href="#">Pedro</a></li>
-            </ul>
-            <ul class="detalhes">
-              <li class="dados">Veiculos</li>
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li><a href="#">6</a></li>
-              <li><a href="#">7</a></li>
-              <li><a href="#">8</a></li>
-              <li><a href="#">9</a></li>
-            </ul>
-            <ul class="detalhes">
-              <li class="dados">Situação</li>
-              <li><a href="#">Entregue</a></li>
-              <li><a href="#">Pendente</a></li>
-              <li><a href="#">Cancelada</a></li>
-              <li><a href="#">Entregue</a></li>
-              <li><a href="#">Pendente</a></li>
-              <li><a href="#">Cancelada</a></li>
-              <li><a href="#">Entregue</a></li>
-              <li><a href="#">Pendente</a></li>
-              <li><a href="#">Entregue</a></li>
-            </ul>
-          </div>
-          <div class="button">
-            <a href="#">Ver tudo</a>
-          </div>
+          <div class="titulo">Alocação</div>
+          <table class="Content-detalhes">
+            <thead>
+              <tr>
+                <th>Modelo</th>
+                <th>Placa</th>
+                <th>Situação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="alocacaoVeiculo model">
+                <td id="modelo"></td>
+                <td id="placa"></td>
+                <td id="situacao"></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div class="top-Content box">
           <div class="titulo">Veiculos</div>
@@ -275,28 +249,9 @@
               <li><a href="#">Pendente</a></li>
               <li><a href="#">Entregue</a></li>
             </ul>
-            <!-- <ul class="detalhes">
-            <li class="dados">Total</li>
-            <li><a href="#">$204.98</a></li>
-            <li><a href="#">$24.55</a></li>
-            <li><a href="#">$25.88</a></li>
-            <li><a href="#">$170.66</a></li>
-            <li><a href="#">$56.56</a></li>
-            <li><a href="#">$44.95</a></li>
-            <li><a href="#">$67.33</a></li>
-             <li><a href="#">$23.53</a></li>
-             <li><a href="#">$46.52</a></li>
-            <li><a href="#">$44.95</a></li>
-            <li><a href="#">$67.33</a></li>
-             <li><a href="#">$23.53</a></li>
-             <li><a href="#">$46.52</a></li>
-            <li><a href="#">$44.95</a></li>
-            <li><a href="#">$67.33</a></li>
-             <li><a href="#">$23.53</a></li>
-             <li><a href="#">$46.52</a></li>
-          </ul> -->
           </div>
         </div>
+
       </div>
     </div>
 
@@ -353,26 +308,6 @@
               <li><a href="#">Pendente</a></li>
               <li><a href="#">Entregue</a></li>
             </ul>
-            <!-- <ul class="detalhes">
-            <li class="dados">Total</li>
-            <li><a href="#">$204.98</a></li>
-            <li><a href="#">$24.55</a></li>
-            <li><a href="#">$25.88</a></li>
-            <li><a href="#">$170.66</a></li>
-            <li><a href="#">$56.56</a></li>
-            <li><a href="#">$44.95</a></li>
-            <li><a href="#">$67.33</a></li>
-             <li><a href="#">$23.53</a></li>
-             <li><a href="#">$46.52</a></li>
-            <li><a href="#">$44.95</a></li>
-            <li><a href="#">$67.33</a></li>
-             <li><a href="#">$23.53</a></li>
-             <li><a href="#">$46.52</a></li>
-            <li><a href="#">$44.95</a></li>
-            <li><a href="#">$67.33</a></li>
-             <li><a href="#">$23.53</a></li>
-             <li><a href="#">$46.52</a></li>
-          </ul> -->
           </div>
         </div>
       </div>
@@ -431,26 +366,6 @@
               <li><a href="#">Pendente</a></li>
               <li><a href="#">Entregue</a></li>
             </ul>
-            <!-- <ul class="detalhes">
-            <li class="dados">Total</li>
-            <li><a href="#">$204.98</a></li>
-            <li><a href="#">$24.55</a></li>
-            <li><a href="#">$25.88</a></li>
-            <li><a href="#">$170.66</a></li>
-            <li><a href="#">$56.56</a></li>
-            <li><a href="#">$44.95</a></li>
-            <li><a href="#">$67.33</a></li>
-             <li><a href="#">$23.53</a></li>
-             <li><a href="#">$46.52</a></li>
-            <li><a href="#">$44.95</a></li>
-            <li><a href="#">$67.33</a></li>
-             <li><a href="#">$23.53</a></li>
-             <li><a href="#">$46.52</a></li>
-            <li><a href="#">$44.95</a></li>
-            <li><a href="#">$67.33</a></li>
-             <li><a href="#">$23.53</a></li>
-             <li><a href="#">$46.52</a></li>
-          </ul> -->
           </div>
         </div>
       </div>
@@ -509,26 +424,7 @@
               <li><a href="#">Pendente</a></li>
               <li><a href="#">Entregue</a></li>
             </ul>
-            <!-- <ul class="detalhes">
-            <li class="dados">Total</li>
-            <li><a href="#">$204.98</a></li>
-            <li><a href="#">$24.55</a></li>
-            <li><a href="#">$25.88</a></li>
-            <li><a href="#">$170.66</a></li>
-            <li><a href="#">$56.56</a></li>
-            <li><a href="#">$44.95</a></li>
-            <li><a href="#">$67.33</a></li>
-             <li><a href="#">$23.53</a></li>
-             <li><a href="#">$46.52</a></li>
-            <li><a href="#">$44.95</a></li>
-            <li><a href="#">$67.33</a></li>
-             <li><a href="#">$23.53</a></li>
-             <li><a href="#">$46.52</a></li>
-            <li><a href="#">$44.95</a></li>
-            <li><a href="#">$67.33</a></li>
-             <li><a href="#">$23.53</a></li>
-             <li><a href="#">$46.52</a></li>
-          </ul> -->
+
           </div>
         </div>
       </div>

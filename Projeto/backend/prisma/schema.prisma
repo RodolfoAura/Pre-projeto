@@ -31,6 +31,7 @@ model Frota {
   modelo String
   marca String
   placa  String
+  tipo String
   Servico Servico[]
   Manutencao Manutencao[]
 }

@@ -322,6 +322,8 @@ nav .profile-detalhes i {
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   background-color: #818080;
+  display: flex;
+  flex-direction: column;
 
 }
 
@@ -331,7 +333,8 @@ nav .profile-detalhes i {
 }
 
 td{
-  padding: 50p                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         x;
+  align-items: center ; 
+  justify-content: center                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              x;
 }
 
 
@@ -339,23 +342,6 @@ td{
   font-size: 24px;
   font-weight: 500;
   color: #fff;
-}
-
-.Content-boxes .Content-detalhes li.dados {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.Content-boxes .Content-detalhes li {
-  list-style: none;
-  margin: 8px 0;
-}
-
-.Content-boxes .Content-detalhes li a {
-  font-size: 18px;
-  color: #fff;
-  font-size: 400;
-  text-decoration: none;
 }
 
 .Content-boxes .box .button {
@@ -542,4 +528,8 @@ td{
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   background-color: #818080;
 
+}
+
+table{
+  text-align: center;
 }

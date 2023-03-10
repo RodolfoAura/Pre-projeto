@@ -14,14 +14,20 @@ function login() {
 
     fetch('http://localhost:3000/loginUser', options)
         .then(response => {
-            console.log(response.status)
             if (response.status === 200) {
                 window.location.href = "./Inicio.html"
+
+                return response.json()
+
             } else if (response.status === 404) {
                 document.getElementById("erro-massagem").style.display = "block"
             }
         })
-        .then(resp => console.log(resp))
+        .then(resp => {
+            console.log()
+            localStorage.setItem('User', JSON.stringify({"nome":resp.result.nome}))
+        })
+
 
 }
 

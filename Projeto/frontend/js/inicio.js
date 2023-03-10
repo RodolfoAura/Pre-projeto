@@ -8,6 +8,10 @@ barraBtn.onclick = function () {
     barraBtn.classList.replace("bx-menu-alt-right", "bx-menu");
 }
 
+let user = JSON.parse(localStorage.getItem("User"));
+
+document.querySelector(".admin_name").innerHTML = user.nome
+
 function trocarTela() {
 
   var link = document.querySelectorAll(".link")
@@ -112,6 +116,9 @@ function listaFrota() {
   let frotaDispo = document.querySelector('.frota-disponivel')
   let alocacao = document.querySelector('.alocacaoVeiculo')
   let tudo = document.querySelector('.Content-detalhes')
+  let tableFrota = document.querySelector('.table-frota')
+  let itensFrota = document.querySelector('.itensFrota')
+ 
 
   const options = { method: 'GET' };
 
@@ -120,8 +127,11 @@ function listaFrota() {
     .then(res => {
       frota.innerHTML = res.length
       res.forEach((e) => {
-        if ((e.Servico === 'Disponivel') === true) {
-          frotaDispo.innerHTML = res.length
+
+        let dis = 0
+        if ((e.Servico === 'Disponivel' && e.Manutencao === 'Disponivel') === true) {
+          dis++
+          frotaDispo.innerHTML = dis
         }
         let lista = alocacao.cloneNode(true)
         lista.classList.remove('model')
@@ -137,13 +147,38 @@ function listaFrota() {
           lista.querySelector('#situacao').innerHTML = 'em serviço'
         }
         tudo.appendChild(lista)
-        console.log(e)
+
+
+
+        let lista2 = itensFrota.cloneNode(true)
+        lista2.classList.remove('model')
+
+        lista2.querySelector('.modeloCar').innerHTML = e.modelo
+        lista2.querySelector('.marcaCar').innerHTML = e.marca
+        lista2.querySelector('.placaCar').innerHTML = e.placa
+
+        // if (e.Manutencao.length == 1) {
+        //   lista2.querySelector('.statusCar').innerHTML = 'em manutenção'
+        // } else if (e.Servico.length == 1) {
+        //   lista2.querySelector('.statusCar').innerHTML = 'em serviço'
+        // } else if (e.Manutencao.length > 1 && e.Servico.length > 1 ) {
+        //   lista2.querySelector('.statusCar').innerHTML = 'disponivel'
+        // }
+
+
+        tableFrota.appendChild(lista2)
+
+       
+
+
       })
     })
 
 }
 
 function listaMotorista() {
+  let tableMoto = document.querySelector('.table-Motorista')
+  let itensMoto = document.querySelector('.itensMotorista')
 
   let motorista = document.querySelector('.motoristas')
   const options = { method: 'GET' };
@@ -152,7 +187,20 @@ function listaMotorista() {
     .then(response => response.json())
     .then(res => {
       motorista.innerHTML = res.length
+      res.forEach((e)=>{
+        console.log(e)
 
+        let lista = itensMoto.cloneNode(true)
+        lista.classList.remove('model')
+
+        lista.querySelector('.motoNome').innerHTML = e.nome
+        lista.querySelector('.motoCpf').innerHTML = e.cpf
+        lista.querySelector('.motoCnh').innerHTML = e.cnh
+        //lista.querySelector('.motoStatus').innerHTML = e
+
+        tableMoto.appendChild(lista)
+
+      })
     })
 }
 

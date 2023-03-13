@@ -109,6 +109,7 @@ function trocarTela() {
 
   })
 }
+var manutenção = 0
 
 function listaFrota() {
 
@@ -126,9 +127,12 @@ function listaFrota() {
     .then(response => response.json())
     .then(res => {
       frota.innerHTML = res.length
-      res.forEach((e) => {
 
-        let dis = 0
+    var dis = 0
+    var serviço=0
+  
+      res.forEach((e) => {
+        
         if ((e.Servico === 'Disponivel' && e.Manutencao === 'Disponivel') === true) {
           dis++
           frotaDispo.innerHTML = dis
@@ -144,6 +148,7 @@ function listaFrota() {
           lista.querySelector('#situacao').innerHTML = e.Manutencao
         }
         if (e.Servico.length == 1) {
+          serviço=e.Servico.length
           lista.querySelector('#situacao').innerHTML = 'em serviço'
         }
         tudo.appendChild(lista)
@@ -172,6 +177,31 @@ function listaFrota() {
 
 
       })
+      var ctx = document.getElementById('myChart').getContext('2d');
+		var myChart = new Chart(ctx, {
+			type: 'doughnut',
+			data: {
+				labels: ['Em Manutenção', 'Disponivel', 'Em serviço'],
+				datasets: [{
+					label: 'Veiculos',
+					data: [manutenção,dis,serviço],
+					backgroundColor: [
+						'#f7d4d7',
+						'#C0F2D8',
+						'#ffe8b3'
+            
+					],
+				}]
+			},
+			options: {
+        legend: {
+          labels: {
+            Fontcolor: 'white'
+          }
+        },
+        responsive: true,
+			}
+		});
     })
 
 }
@@ -204,6 +234,8 @@ function listaMotorista() {
     })
 }
 
+
+
 function listaManutencao() {
   let frotaManutencao = document.querySelector('.frotaManutencao')
 
@@ -212,6 +244,7 @@ function listaManutencao() {
   fetch('http://localhost:3000/readManutencao', options)
     .then(response => response.json())
     .then(res => {
+      manutenção= res.length
       frotaManutencao.innerHTML = res.length
     })
 
@@ -224,10 +257,13 @@ function listarDisponibilidade() {
 
 
 function listar() {
+  listaManutencao()
   trocarTela()
   listaFrota()
   listaMotorista()
-  listaManutencao()
+  
 }
 
 listar() 
+
+

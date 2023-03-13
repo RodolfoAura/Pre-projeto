@@ -80,28 +80,28 @@
         <div class="box">
           <div class="direita">
             <div class="box-dados">Frota</div>
-            <div class="number veiculos"></div>
+            <div class="number veiculos">0</div>
           </div>
           <i class='bx bx-bus cart'></i>
         </div>
         <div class="box">
           <div class="direita">
             <div class="box-dados">Motoristas</div>
-            <div class="number motoristas"></div>
+            <div class="number motoristas">0</div>
           </div>
           <i class='bx bx-user cart three'></i>
         </div>
         <div class="box">
           <div class="direita">
             <div class="box-dados">Frota Disponível</div>
-            <div class="number frota-disponivel"></div>
+            <div class="number frota-disponivel">0</div>
           </div>
           <i class='bx bx-bus cart two '></i>
         </div>
         <div class="box">
           <div class="direita">
             <div class="box-dados">Em manutenção</div>
-            <div class="number frotaManutencao"></div>
+            <div class="number frotaManutencao">0</div>
           </div>
           <i class='bx  bx-bus cart four'></i>
         </div>
@@ -123,7 +123,7 @@
               <tr class="alocacaoVeiculo model">
                 <td id="modelo"></td>
                 <td id="placa"></td>
-                <td id="motorista"></td>
+                <td id="motorista">-</td>
                 <td id="situacao"></td>
               </tr>
             </tbody>
@@ -131,68 +131,7 @@
         </div>
         <div class="top-Content box">
           <div class="titulo">Veiculos</div>
-          <ul class="top-Content-detalhes">
-            <li>
-              <a href="#">
-                <span class="titulo">Estado</span>
-              </a>
-              <span class="titulo">ID</span>
-            </li>
-            <li>
-              <a href="#">
-
-                <span class="estado">Em manutenção </span>
-              </a>
-              <span class="valor">10</span>
-            </li>
-            <li>
-              <a href="#">
-                <span class="estado">Em manutenção</span>
-              </a>
-              <span class="valor">12</span>
-            </li>
-            <li>
-              <a href="#">
-                <span class="estado">Em manutenção.</span>
-              </a>
-              <span class="valor">29</span>
-            </li>
-            <li>
-              <a href="#">
-                <span class="estado">Em manutenção</span>
-              </a>
-              <span class="valor">40</span>
-            </li>
-            <li>
-              <a href="#">
-                <span class="estado">Em manutenção</span>
-              </a>
-              <span class="valor">37</span>
-            <li>
-              <a href="#">
-                <span class="estado">Em manutenção</span>
-              </a>
-              <span class="valor">15</span>
-            </li>
-            <li>
-              <a href="#">
-                <span class="estado">Em manutenção</span>
-              </a>
-              <span class="valor">25</span>
-            </li>
-            <li>
-              <a href="#">
-                <span class="estado">Em manutenção</span>
-              </a>
-              <span class="valor">24</span>
-            </li>
-            <li>
-              <a href="#">
-                <span class="estado">Em manutenção</span>
-              </a>
-              <span class="valor">14</span>
-            </li>
-          </ul>
+          <canvas id="myChart"></canvas>
         </div>
       </div>
     </div>
@@ -280,8 +219,9 @@
     </div>
   </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="../js/inicio.js"></script>
-
+  
 </body>
 
 </html>
